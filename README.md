@@ -27,3 +27,20 @@ copy the directory tree into a deliverables folder, and then try to delete the f
  * assets folders
  
 The result is a deliverables folder with the same structure minus the working files and assets folders, ready to zip and send to whoever needs .swf files and backup images.
+
+<pre>
+  project
+  ├───120x600
+  │   ├───assets
+  │   └───assets fr
+  ├───468x60
+  │   ├───assets
+  │   └───assets fr
+  ├───620x286
+  │   ├───assets
+  │   └───assets fr
+  └───deliverables
+      ├───120x600
+      ├───468x60
+      └───620x286
+</pre>
