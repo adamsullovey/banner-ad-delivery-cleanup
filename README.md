@@ -29,7 +29,7 @@ copy the directory tree into a deliverables folder, and then try to delete the f
 The result is a deliverables folder with the same structure minus the working files and assets folders, ready to zip and send to whoever needs .swf files and backup images.
 
 <pre>
-  project
+project
   ├───120x600
   │   ├───assets
   │   └───assets fr
