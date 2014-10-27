@@ -20,7 +20,7 @@ project
 
 where folders like 120x600 and the assets folder contain files like .fla, .swf, .jpg, .txt, and other stuff, running
 
-`python cleanup.py`
+`python delivery-cleanup.py`
 
 copy the directory tree into a deliverables folder, and then try to delete the following:
  * anything that isn't a .swf, .jpg, .png
