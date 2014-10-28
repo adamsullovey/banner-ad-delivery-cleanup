@@ -10,8 +10,10 @@ def scandirs(path):
 
 	# this will be the new folder that working files are copied to
 	deliverables_path = os.path.join(path, 'deliverables')
+	archive_file_name = 'deliverables'
+	archive_type = 'zip'
 
-	# try to delete it if it exists already
+	# try to deliverables path if it exists already
 	try:
 		shutil.rmtree(deliverables_path)
 
@@ -19,7 +21,7 @@ def scandirs(path):
 		print("could not delete " + deliverables_path)
 
 	# copy working files
-	shutil.copytree(path, deliverables_path);
+	shutil.copytree(path, deliverables_path)
 
 	print("copied to " + deliverables_path)
 
@@ -37,6 +39,9 @@ def scandirs(path):
 			if "assets" in currentDir:
 				print("delete dir: " + currentDir)
 				shutil.rmtree(os.path.join(root, currentDir))
+
+	# zip up the new folder
+	shutil.make_archive(archive_file_name, archive_type, deliverables_path)
 
 
 scandirs('./')
