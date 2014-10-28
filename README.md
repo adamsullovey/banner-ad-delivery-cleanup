@@ -39,6 +39,7 @@ project
   ├───620x286
   │   ├───assets
   │   └───assets fr
+  ├───deliverables.zip
   └───deliverables
       ├───120x600
       ├───468x60
