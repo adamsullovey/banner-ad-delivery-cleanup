@@ -13,14 +13,14 @@ def scandirs(path):
 	archive_file_name = 'deliverables'
 	archive_type = 'zip'
 
-	# try to deliverables path if it exists already
+	# try to delete deliverables path if it exists already
 	try:
 		shutil.rmtree(deliverables_path)
 
 	except FileNotFoundError:
 		print("could not delete " + deliverables_path)
 
-	# copy working files
+	# copy working files to deliverables
 	shutil.copytree(path, deliverables_path)
 
 	print("copied to " + deliverables_path)
